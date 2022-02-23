@@ -14,20 +14,29 @@
   border: var(--tempBorder);
 }
 
-.topSideBar {
+.topSideBar,
+.bottomSideBar {
   display: grid;
   grid-template-columns: 1fr 5fr;
   gap: 15px 0;
 }
 
-.topSideBar > * {
+.topSideBar > *,
+.bottomSideBar > * {
   border: var(--tempBorder);
   align-self: end;
 }
 
-.topSideBar > img {
+.topSideBar > img,
+.bottomSideBar > img {
   justify-self: end;
 }
+
+/* .bottomSideBar {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 15px 0;
+} */
 
 header {
   grid-column: 2 / 4;
