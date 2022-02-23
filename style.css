@@ -21,13 +21,13 @@ header {
 }
 
 .headerTop>div:nth-of-type(1) {
-  grid-column: 1 / 2;
+  grid-column: 1;
 }
 
 .headerTop>div:nth-of-type(2) {
   display: grid;
   grid-auto-flow: column; 
-  grid-column: 2 / 3;
+  grid-column: 2;
 }
 
 .cowGirl {
