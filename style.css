@@ -44,9 +44,7 @@ header {
   align-self: center;
 }
 
-.topSideBar > a,
-.bottomSideBar > a,
-.sideBarHeading > a {
+.sideBar a {
   justify-self: end;
 }
 
