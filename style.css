@@ -63,7 +63,7 @@ h3  {
   border: solid black;
 }
 
-.mainContent  {
+.mainWrapper  {
   grid-column: 2 / 4;
   border: solid black;
 }
