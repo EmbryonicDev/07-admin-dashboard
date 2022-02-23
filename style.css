@@ -15,6 +15,27 @@ header {
   border: solid black;
 }
 
+.headerTop  {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.headerTop>div:nth-of-type(1) {
+  grid-column: 1 / 2;
+}
+
+.headerTop>div:nth-of-type(2) {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-column: 2 / 3;
+}
+
+.cowGirl {
+  height: 2.5rem;
+  border: black solid 0.5px;
+  border-radius: 50%;
+}
+
 .mainContent  {
   grid-column: 2 / 4;
   border: solid black;
