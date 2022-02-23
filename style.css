@@ -19,7 +19,6 @@ header {
 
 .sideBar  {
   grid-area: 1 / 1 / 4 / 2;
-  border: var(--tempBorder);
 }
 
 .sideBarHeading {
@@ -40,7 +39,6 @@ header {
 .topSideBar > *,
 .bottomSideBar > *,
 .sideBarHeading > * {
-  /* border: var(--tempBorder); */
   align-self: center;
 }
 
