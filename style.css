@@ -88,7 +88,7 @@ h3  {
   align-self: center;
 }
 
-.sideBar a {
+.sideBar a:nth-child(2n + 1) {
   justify-self: end;
 }
 
