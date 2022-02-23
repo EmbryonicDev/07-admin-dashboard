@@ -14,6 +14,21 @@
   border: var(--tempBorder);
 }
 
+.topSideBar {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 15px 0;
+}
+
+.topSideBar > * {
+  border: var(--tempBorder);
+  align-self: end;
+}
+
+.topSideBar > img {
+  justify-self: end;
+}
+
 header {
   grid-column: 2 / 4;
   border: var(--tempBorder);
