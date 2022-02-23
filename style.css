@@ -1,0 +1,21 @@
+.container  {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 3fr / 1fr 2fr 1fr;
+}
+
+.sideBar  {
+  grid-area: 1 / 1 / 4 / 2;
+  border: solid black;
+}
+
+header {
+  grid-column: 2 / 4;
+  border: solid black;
+}
+
+.mainContent  {
+  grid-column: 2 / 4;
+  border: solid black;
+}
