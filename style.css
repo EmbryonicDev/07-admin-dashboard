@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template: 0.7fr 3fr / 1fr 2fr 1fr;
+  grid-template: 0.7fr 3fr / 0.6fr 2fr 1fr;
 }
 
 .sideBar  {
@@ -15,28 +15,31 @@
 }
 
 .topSideBar,
-.bottomSideBar {
+.bottomSideBar,
+.sideBarHeading {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  gap: 15px 0;
+  gap: 15px 5px;
+  margin-bottom: 50px;
 }
 
 .topSideBar > *,
-.bottomSideBar > * {
+.bottomSideBar > *,
+.sideBarHeading > * {
   border: var(--tempBorder);
-  align-self: end;
+  align-self: center;
 }
 
 .topSideBar > img,
-.bottomSideBar > img {
+.bottomSideBar > img,
+.sideBarHeading > img {
   justify-self: end;
 }
 
-/* .bottomSideBar {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  gap: 15px 0;
-} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 header {
   grid-column: 2 / 4;
