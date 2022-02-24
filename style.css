@@ -156,7 +156,8 @@ a {
   border-radius: 8px;
 }
 
-.projectWrapper p {
+.projectWrapper p, 
+.announceWrapper p {
   margin: 2.5px 0 0;
 }
 
