@@ -2,6 +2,8 @@
   --tempBorder: solid blue;
   --headerSideMargin: 30px;
   --mainMarginTopBottom: 30px 18px;
+  --imageSmall: 2.5rem;
+  --imgBorderRadius: 50%;
 }
 
 .container  {
@@ -50,9 +52,8 @@ input {
   margin-right: var(--headerSideMargin)
 }
 
-.cowGirl {
-  height: 2.5rem;
-  border: black solid 0.5px;
+.notification img:last-of-type {
+  height: var(--imageSmall);
   border-radius: 50%;
 }
 
@@ -75,6 +76,7 @@ h3  {
 
 .headerBottom img {
   height: 3.5rem;
+  border-radius: var(--imgBorderRadius);
   margin-left: var(--headerSideMargin);
   margin-right: 20px;
 }
@@ -194,4 +196,10 @@ a {
 
 .trendingWrapper  {
   align-self: end;
+  display: grid;
+}
+
+.trendingWrapper img  {
+  height: var(--imageSmall);
+  border-radius: var(--imgBorderRadius);
 }
