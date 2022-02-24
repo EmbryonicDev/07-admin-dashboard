@@ -1,9 +1,12 @@
 :root {
   --tempBorder: solid blue;
   --headerSideMargin: 30px;
-  --mainMarginLeftRight: 0 18px;
+  --mainMarginLeftRight: 0 18px 18px;
   --imageSmall: 2.5rem;
   --imgBorderRadius: 50%;
+  --sideBarPlusButtonsColor: #2dd4bf;
+  --searchPlusMainBgC: #e4e4e7;
+  --boxesBgC: #fafafa;
 }
 
 .container  {
@@ -15,21 +18,20 @@
 
 header {
   grid-column: 2 / 4;
-  border: var(--tempBorder);
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  background-color: #f9fafb;
+  margin-bottom: 10px;
 }
 
 .headerTop  {
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
-  /* border: var(--tempBorder); */
 }
 
 .search {
   grid-column: 1;
-  /* border: var(--tempBorder); */
   display: grid;
   grid-template-columns: max-content 1fr;
   margin-left: var(--headerSideMargin);
@@ -38,7 +40,7 @@ header {
 input {
   width: clamp(70%, 70%, 80%);
   border-radius: 16px;
-  background-color: #ccfbf1;
+  background-color: var(--searchPlusMainBgC);
   border: none;
 }
 
@@ -62,7 +64,6 @@ input {
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
-  /* border: var(--tempBorder); */
 }
 
 h3, h4, h2  {
@@ -100,7 +101,7 @@ h3, h4, h2  {
 
 .headerBottom button  {
   justify-self: end;
-  background-color: #99f6e4;
+  background-color: var(--sideBarPlusButtonsColor);
   border: none;
   padding: 5px;
   border-radius: 20px;
@@ -109,6 +110,7 @@ h3, h4, h2  {
 
 .sideBar  {
   grid-area: 1 / 1 / 4 / 2;
+  background-color: var(--sideBarPlusButtonsColor);
 }
 
 .topSideBar,
@@ -136,10 +138,10 @@ a {
 }
 
 .mainWrapper  {
-  border: var(--tempBorder);
   grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 1fr 250px;
+  background-color: var(--searchPlusMainBgC);
 }
 
 /* Project Container Heading */
@@ -172,9 +174,13 @@ a {
 .projectWrapper > div {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
-  border: var(--tempBorder);
   padding: 25px 15px 20px;
   border-radius: 8px;
+  background-color: var(--boxesBgC);
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: orange;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projectWrapper p, 
@@ -194,16 +200,16 @@ a {
 .mainRightWrapper  {
   margin: var(--mainMarginLeftRight);
   margin-left: 0;
-  border: var(--tempBorder);
   display: grid;
   gap: 30px;
 }
 
 .announceWrapper  {
   padding: 25px 10px;
-  border: var(--tempBorder);
   height: max-content;
   border-radius: 8px;
+  background-color: var(--boxesBgC);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .announceWrapper div  {
@@ -225,9 +231,10 @@ a {
   display: grid;
   gap: 25px;
   padding: 25px 15px 20px;
-  border: var(--tempBorder);
   border-radius: 8px;
   position: relative;
+  background-color: var(--boxesBgC);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .trendingWrapper img  {
