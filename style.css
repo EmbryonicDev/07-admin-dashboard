@@ -64,7 +64,7 @@ input {
   /* border: var(--tempBorder); */
 }
 
-h3  {
+h3, h4, h2  {
   margin: 0;
 }
 
@@ -161,6 +161,7 @@ a {
 .projectWrapper p, 
 .announceWrapper p {
   margin: 2.5px 0 0;
+  font-size: 0.8rem;
 }
 
 .projectIcons  {
@@ -176,6 +177,7 @@ a {
   margin-left: 0;
   border: var(--tempBorder);
   display: grid;
+  gap: 30px;
 }
 
 .announceWrapper  {
