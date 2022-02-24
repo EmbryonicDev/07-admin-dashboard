@@ -141,6 +141,7 @@ a {
 }
 
 .projectWrapper {
+  grid-column: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 18px;
@@ -152,8 +153,16 @@ a {
   grid-template-rows: max-content 1fr max-content;
   border: var(--tempBorder);
   padding: 25px 15px 20px;
+  border-radius: 8px;
 }
 
 .projectWrapper p {
   margin: 0;
+}
+
+.projectIcons  {
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+  gap: 20px;
 }
