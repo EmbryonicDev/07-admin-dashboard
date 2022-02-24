@@ -141,6 +141,16 @@ a {
   grid-template-columns: 1fr 250px;
 }
 
+.mainWrapper>div:first-of-type {
+  color: green;
+  grid-column: 1;
+}
+
+.mainWrapper>div:nth-child(2) {
+  color: green;
+  grid-column: 2;
+}
+
 .projectWrapper {
   grid-column: 1;
   display: grid;
@@ -150,7 +160,7 @@ a {
   margin: var(--mainMarginTopBottom);
 }
 
-.projectWrapper > * {
+.projectWrapper > div {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   border: var(--tempBorder);
