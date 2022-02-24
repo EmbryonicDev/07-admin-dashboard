@@ -137,7 +137,7 @@ a {
   border: var(--tempBorder);
   grid-column: 2 / 4;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 1fr max-content;
 }
 
 .projectWrapper {
