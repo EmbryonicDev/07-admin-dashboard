@@ -1,5 +1,8 @@
 :root {
   --tempBorder: solid blue;
+  --headerSideMargin: 30px;
+
+
 }
 
 .container  {
@@ -18,9 +21,9 @@ header {
 
 .headerTop  {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr max-content;
   align-items: center;
-  border: var(--tempBorder);
+  /* border: var(--tempBorder); */
 }
 
 .search {
@@ -28,12 +31,14 @@ header {
   /* border: var(--tempBorder); */
   display: grid;
   grid-template-columns: max-content 1fr;
+  margin-left: var(--headerSideMargin);
 }
 
 input {
   width: clamp(70%, 70%, 80%);
   border-radius: 16px;
   background-color: #ccfbf1;
+  border: none;
 }
 
 .notification {
@@ -43,26 +48,57 @@ input {
   justify-content: end;
   grid-column: 2;
   gap: 20px;
-  margin-right: 20%;
+  margin-right: var(--headerSideMargin)
+}
 
+.cowGirl {
+  height: 2.5rem;
+  border: black solid 0.5px;
+  border-radius: 50%;
 }
 
 .headerBottom {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr max-content;
   align-items: center;
-  border: var(--tempBorder);
+  /* border: var(--tempBorder); */
 }
 
 h3  {
   margin: 0;
 }
 
-.headerBottom>div:nth-of-type(1)  {
-  /* display: grid;
-  grid-auto-flow: column;  */
-  display: flex;
-  border: var(--tempBorder);
+.headerBottom>div:first-child  {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: max-content 1fr;
+}
+
+.headerBottom img {
+  height: 3.5rem;
+  margin-left: var(--headerSideMargin);
+  margin-right: 20px;
+}
+
+.greeting {
+  align-self: center;
+}
+
+.headerBottom>div:last-child  {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-right: var(--headerSideMargin)
+}
+
+.headerBottom button  {
+  justify-self: end;
+  background-color: #99f6e4;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 86px;
 }
 
 .sideBar  {
@@ -95,12 +131,6 @@ h3  {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.cowGirl {
-  height: 2.5rem;
-  border: black solid 0.5px;
-  border-radius: 50%;
 }
 
 .mainWrapper  {
