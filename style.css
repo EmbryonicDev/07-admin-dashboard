@@ -175,3 +175,11 @@ a {
   border: var(--tempBorder);
   display: grid;
 }
+
+.announceWrapper  {
+  padding: 10px;
+}
+
+.trendingWrapper  {
+  align-self: end;
+}
