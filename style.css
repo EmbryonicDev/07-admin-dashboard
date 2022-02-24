@@ -199,6 +199,8 @@ a {
   display: grid;
   gap: 25px;
   padding: 25px 15px 20px;
+  border: var(--tempBorder);
+  border-radius: 8px;
 }
 
 .trendingWrapper img  {
@@ -210,5 +212,5 @@ a {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-auto-flow: column;
-  gap: 5px;
+  gap: 10px;
 }
