@@ -52,6 +52,7 @@ input {
   margin-right: var(--headerSideMargin)
 }
 
+/* Notification Profile Pic */
 .notification img:last-of-type {
   height: var(--imageSmall);
   border-radius: 50%;
@@ -68,12 +69,14 @@ h3, h4, h2  {
   margin: 0;
 }
 
+/* Header Bottom Left */
 .headerBottom>div:first-child  {
   display: grid;
   grid-column: 1;
   grid-template-columns: max-content 1fr;
 }
 
+/* Header Bottom Profile Pic */
 .headerBottom img {
   height: 3.5rem;
   border-radius: var(--imgBorderRadius);
@@ -81,10 +84,12 @@ h3, h4, h2  {
   margin-right: 20px;
 }
 
-.greeting {
+/* User Greeting Text */
+.headerBottom > div > div {
   align-self: center;
 }
 
+/* Header Button Container */
 .headerBottom>div:last-child  {
   grid-column: 2;
   display: grid;
@@ -125,10 +130,6 @@ h3, h4, h2  {
   align-self: center;
 }
 
-.sideBar a:nth-child(2n + 1) {
-  justify-self: end;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -141,11 +142,13 @@ a {
   grid-template-columns: 1fr 250px;
 }
 
+/* Project Container Heading */
 .mainWrapper>div:first-of-type {
   color: green;
   grid-column: 1;
 }
 
+/* Announcement Heading */
 .mainWrapper>div:nth-child(2) {
   color: green;
   grid-column: 2;
@@ -160,6 +163,7 @@ a {
   margin: var(--mainMarginTopBottom);
 }
 
+/* Individual Project Containers */
 .projectWrapper > div {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
@@ -220,6 +224,7 @@ a {
   border-radius: var(--imgBorderRadius);
 }
 
+/* Trending Container */
 .trendingWrapper > div  {
   display: grid;
   grid-template-columns: max-content 1fr;
