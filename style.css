@@ -112,25 +112,40 @@ h3, h4, h2  {
 .sideBar  {
   grid-area: 1 / 1 / 3 / 2;
   background-color: var(--sideBarPlusButtonsColor);
-}
-
-.topSideBar,
-.bottomSideBar,
-.sideBarHeading {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  gap: 15px 5px;
-  margin: 0 15px 50px;
+  grid-template-rows: repeat(3, max-content);
+  gap: 40px;
+  justify-content: start;
+  align-items: start;
 }
 
 .sideBarHeading {
   margin-top: 15px;
 }
 
-.topSideBar > *,
-.bottomSideBar > *,
-.sideBarHeading > * {
-  align-self: center;
+/* Sidebar icons + text */
+.topSideBar a,
+.bottomSideBar a,
+.sideBarHeading a {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  align-self: start;
+  margin-left: 10px;
+}
+
+/* sidebar text */
+.sideBarHeading h3,
+.bottomSideBar span,
+.topSideBar span  {
+  color: #f9fafb;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.topSideBar a,
+.bottomSideBar a {
+  margin-bottom: 10px;
 }
 
 a {
