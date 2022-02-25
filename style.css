@@ -161,6 +161,7 @@ button:hover  {
   justify-content: start;
   align-items: start;
   padding-right: 15px;
+  color: var(--lightGrey);
 }
 
 .sideBarHeading {
@@ -184,10 +185,18 @@ button:hover  {
 /* sidebar text */
 .bottomSideBar span,
 .topSideBar span  {
-  color: var(--lightGrey);
   margin-top: 4px;
   font-size: var(--fontSizeThree);
   font-weight: bold;
+}
+
+.topSideBar a:hover,
+.bottomSideBar a:hover,
+.sideBarHeading a:hover {
+  background-color: #0f766e;
+  color: var(--mediumTeal);
+  transform: scale(1.2);
+  border-radius: 8px;
 }
 
 .topSideBar a,
