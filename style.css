@@ -230,7 +230,7 @@ a {
 .mainHeadings {
   font-size: var(--fontSizeThree);
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 16px;
   margin-bottom: 8px;
 }
 
@@ -324,12 +324,13 @@ a {
 .trendingWrapper  {
   /* align-self: end; */
   display: grid;
-  gap: 25px;
+  gap: 18px;
   padding: 25px 15px 20px;
   border-radius: 8px;
   position: relative;
   background-color: var(--zinc50);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
 .trendingWrapper img  {
