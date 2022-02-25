@@ -132,6 +132,14 @@ button  {
   font-weight: bold;
 }
 
+button:hover  {
+  cursor: pointer;
+  background-color: var(--lightGrey);
+  color: var(--mediumTeal);
+  border: dotted var(--mediumTeal);
+  transform: scale(1.15);
+}
+
 .sideBar  {
   grid-area: 1 / 1 / 3 / 2;
   background-color: var(--mediumTeal);
@@ -255,8 +263,7 @@ a {
 
 .projectIcons img:hover {
   cursor: pointer;
-  /* transform: rotate(720deg); */
-  ;
+  transform: rotate(720deg);
   transition: 1s;
   box-shadow: 0 0 12px var(--mediumTeal);
 }
