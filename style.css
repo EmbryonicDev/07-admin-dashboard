@@ -252,7 +252,7 @@ a {
   background-color: var(--zinc50);
   border-left-width: 10px;
   border-left-style: solid;
-  border-left-color: orange;
+  border-left-color: #7c3aed;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   font-size: var(--fontSizeFour);
   font-weight: bold;
