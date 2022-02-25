@@ -6,7 +6,15 @@
   --imgBorderRadius: 50%;
   --sideBarPlusButtonsColor: #2dd4bf;
   --searchPlusMainBgC: #e4e4e7;
+  --lightGrey: #f9fafb;
   --boxesBgC: #fafafa;
+  --fontSizeOne: 1.3rem;
+  --fontSizeTwo: 1.2rem;
+  --fontSizeThree: 1.1rem;
+  --fontSizeFour: 1rem;
+  --fontSizeFive: 0.9rem;
+  --fontSizeSix: 0.8rem;
+  --fontSizeSeven: 0.7rem;
 }
 
 .container  {
@@ -20,13 +28,15 @@ header {
   grid-column: 2 / 4;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  background-color: #f9fafb;
+  background-color: var(--lightGrey);
 }
 
 .headerTop  {
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
+  font-size: var(--fontSizeFour);
+  font-weight: 600;
 }
 
 .search {
@@ -41,6 +51,7 @@ input {
   border-radius: 16px;
   background-color: var(--searchPlusMainBgC);
   border: none;
+  line-height: 1.2rem;
 }
 
 .notification {
@@ -64,11 +75,7 @@ input {
   grid-template-columns: 1fr max-content;
   align-items: center;
   margin-bottom: 10px;
-  
-}
-
-h3, h4, h2  {
-  margin: 0;
+  font-size: var(--fontSizeFive);
 }
 
 /* Header Bottom Left */
@@ -91,6 +98,12 @@ h3, h4, h2  {
   align-self: center;
 }
 
+/* Header bottom user name + @user name */
+.headerBottom > div span  {
+  font-size: var(--fontSizeTwo);
+  font-weight: bold;
+}
+
 /* Header Button Container */
 .headerBottom>div:last-child  {
   grid-column: 2;
@@ -100,13 +113,16 @@ h3, h4, h2  {
   margin-right: var(--headerSideMargin)
 }
 
-.headerBottom button  {
+button  {
   justify-self: end;
   background-color: var(--sideBarPlusButtonsColor);
   border: none;
   padding: 5px;
   border-radius: 20px;
   width: 86px;
+  color: var(--lightGrey);
+  font-size: var(--fontSizeFive);
+  font-weight: bold;
 }
 
 .sideBar  {
@@ -117,13 +133,17 @@ h3, h4, h2  {
   gap: 40px;
   justify-content: start;
   align-items: start;
+  padding-right: 15px;
 }
 
 .sideBarHeading {
   margin-top: 15px;
+  color: var(--lightGrey);
+  font-size: var(--fontSizeOne);
+  font-weight: bold;
 }
 
-/* Sidebar icons + text */
+/* Sidebar icons + text as container*/
 .topSideBar a,
 .bottomSideBar a,
 .sideBarHeading a {
@@ -135,11 +155,11 @@ h3, h4, h2  {
 }
 
 /* sidebar text */
-.sideBarHeading h3,
 .bottomSideBar span,
 .topSideBar span  {
-  color: #f9fafb;
+  color: var(--lightGrey);
   margin-top: 4px;
+  font-size: var(--fontSizeThree);
   font-weight: bold;
 }
 
@@ -172,7 +192,7 @@ a {
 }
 
 .mainHeadings {
-  font-size: 20px;
+  font-size: var(--fontSizeThree);
   font-weight: bold;
   margin-top: 30px;
 }
@@ -197,12 +217,18 @@ a {
   border-left-style: solid;
   border-left-color: orange;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: var(--fontSizeFour);
+  font-weight: bold;
 }
 
 .projectWrapper p, 
 .announceWrapper p {
   margin: 2.5px 0 0;
-  font-size: 0.8rem;
+}
+
+.projectWrapper p {
+  font-size: var(--fontSizeFive);
+  font-weight: normal;
 }
 
 .projectIcons  {
@@ -218,6 +244,7 @@ a {
   margin-left: 0;
   display: grid;
   gap: 30px;
+  font-size: var(--fontSizeSix);
 }
 
 .announceWrapper  {
@@ -234,7 +261,7 @@ a {
 }
 
 .announceWrapper p  {
-  font-size: 0.7rem;
+  font-size: var(--fontSizeSeven);
 }
 
 .trendingHeading  {
