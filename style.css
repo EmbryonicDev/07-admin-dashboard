@@ -93,7 +93,6 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
-  margin-bottom: 10px;
   font-size: var(--fontSizeFive);
 }
 
@@ -109,7 +108,7 @@ input:focus {
   height: 3.5rem;
   border-radius: var(--imgBorderRadius);
   margin-left: var(--headerSideMargin);
-  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 /* User Greeting Text */
@@ -252,7 +251,7 @@ a {
   background-color: var(--zinc50);
   border-left-width: 10px;
   border-left-style: solid;
-  border-left-color: #7c3aed;
+  border-left-color: orange;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   font-size: var(--fontSizeFour);
   font-weight: bold;
