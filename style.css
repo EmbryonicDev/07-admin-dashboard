@@ -54,6 +54,15 @@ input {
   line-height: 1.2rem;
 }
 
+input:hover {
+  border: none;
+  border: dotted var(--mediumTeal);
+}
+
+input:focus {
+  background-color: #bbf7d0;
+}
+
 .notification {
   display: grid;
   grid-template-columns: repeat(3, max-content);
