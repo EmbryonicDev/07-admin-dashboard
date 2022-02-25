@@ -305,6 +305,7 @@ a {
   border-radius: 8px;
   background-color: var(--zinc50);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
 .announceWrapper div  {
@@ -318,7 +319,7 @@ a {
 
 .trendingHeading  {
   position: absolute;
-  top: -55px
+  top: -45px
 }
 
 .trendingWrapper  {
