@@ -46,6 +46,10 @@ header {
   margin-left: var(--headerSideMargin);
 }
 
+.search img:hover {
+  transform: scale(150%);
+}
+
 input {
   width: clamp(70%, 70%, 80%);
   border-radius: 16px;
@@ -55,7 +59,6 @@ input {
 }
 
 input:hover {
-  border: none;
   border: dotted var(--mediumTeal);
 }
 
